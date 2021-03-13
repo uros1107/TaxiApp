@@ -1,50 +1,38 @@
-# Laravel React App for BigCommerce
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This is a basic BigCommerce app with two screens, a catalog summary view and list of orders that can be cancelled, built using Laravel and React. 
+## Available Scripts
 
-It's meant to fast track your ability to take a concept for an app to something usable within the BigCommerce control panel. A live store can install this app while it runs locally.
+In the project directory, you can run:
 
-A walkthrough going over the steps taken to produce this app, along with the steps required to create the app in BigCommerce, can be read [here](https://medium.com/p/711ceceb5006).
+### `npm start`
 
-## Installation
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Before jumping in, you'll want to make sure you have the system requirements met:
-- PHP ([Installation Guide](https://www.php.net/manual/en/install.php))
-- Composer ([Installation Guide](https://getcomposer.org/doc/00-intro.md))
-- Laravel ([Installation Guide](https://laravel.com/docs/5.8))
-- Local SSL Cert (Recommend Valet or Homestead to ease set up)
-  - Mac OS: Valet ([Installation Guide](https://laravel.com/docs/5.8/valet))
-  - Windows / Linux: Homestead ([Installation Guide](https://laravel.com/docs/5.8/homestead))
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-To install PHP dependancies:
+### `npm test`
 
-```bash
-composer install
-```
-And JS dependancies:
-```bash
-npm install
-```
-To test on a BigCommerce store, you can create a free trial on bigcommerce.com or request a free sandbox store by [signing up to be a tech partner](https://www.bigcommerce.com/partners/).
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Usage
-To compile JS assets:
-```bash
-npm run dev
-```
-After compiling the app should be reachable at the site you are hosting the app on locally. i.e https://laravel-react-bigcommerce-app.test/
+### `npm run build`
 
-When running the app outside of BigCommerce, setting the follow environment variable will cause the app to use the local API credential (also in the .env file):
-```
-APP_ENV=local
-``` 
-Likewise, setting it to production will use only the credentials received during the OAuth handshake when the app is install on the BigCommerce store:
-```
-APP_ENV=production
-```
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-## License
-MIT
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
