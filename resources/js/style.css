@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+.chat-area, .home {
+  margin-top: 0px;
+}
+
+.chat-area {
+  padding: 20px;
+  height: 400px;
+  overflow-y: scroll;
+  height: calc(100vh - 126px);
+}
+
+.chat-area .chat-bubble {
+  background-color: #bbdefb;
+  padding: 10px 20px;
+  border-radius: 16px;
+  max-width: 300px;
+  word-wrap: break-word;
+  font-size: 16px;
+}
+
+.chat-bubble .chat-time {
+  font-size: 11px;
+  color: #757575;
+  text-align: right;
+}
+
+.chat-area .chat-bubble.current-user {
+  margin-left: auto;
+  background-color: #f4f9fd;
+}
+
+.form-control {
+  width: 60%;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.btn {
+  margin-top: 10px;
+}
+
+.btn-submit {
+  background-color: #2e7d32;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .chat-area {
+    padding: 0px 100px;
+  }
+
+  .message-box {
+    padding: 0px 120px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .form-control {
+    width: 100%;
+  }
+
+  .chat-area .chat-bubble {
+    max-width: 250px;
+  }
+}
+
+.span {
+    color: #000 !important
+}
+
+.description {
+    color: #000000;
+    font-family: "Calibri";
+    font-size: medium;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 32px;
+    line-height: 1;
+}
+
+h2 {
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 22px;
+    line-height: 1;
+}
+
+.letterStyle {
+    position: absolute !important;
+    top: 155px;
+    padding: 0px;
+    left: 0px !important;
+}
+
+.letter {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff2462 !important;
+  }
+  
+.smallLetter {
+    font-size: 22px;
+    font-weight: 600;
+    color: #000 !important;
+  }
+  
+.xlLetter {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: #000 !important;
+    border: 2px solid;
+    margin: 0px 130px;
+    /* width: 40%; */
+  }
+
+.standardButton {
+  background: #339966;
+  border-color: #339966;
+  box-shadow: #339966 0px 6px 23px -3px;
+  border-radius: 50px;
+}
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+  .fa-pinterest {
+    background: #cb2027;
+    color: white;
+  }
+
+  .makeStyles-root-1 {
+      max-width: 100% !important;
+  }
+
+  @media (min-width: 960px) {
+    .MuiGrid-grid-md-6 {
+        max-width: 100% !important;
+    }
+  }
+  
+
+  @media only screen and (max-width: 320px) { 
+    .letter {
+        font-size: 24px;
+    }
+
+    .smallLetter {
+        font-size: 20px;
+    }
+
+    .xlLetter {
+        font-size: 14px !important;
+        margin: 0px 95px;
+      }
+  }
